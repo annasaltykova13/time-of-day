@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time of Day Lab</title>
+    <title>Time of Day</title>
     
     <style>
         /* We target the HTML element directly for our background color swap */
@@ -41,13 +41,14 @@
 <body>
 
     <div class="container">
-        <h1 id="main-greeting">Time of Day Lab</h1>
+        <h1 id="main-greeting">Time of Day by NAME HERE</h1>
         
         <h2 id="time-text">What time is it?</h2>
 
         <p>This page will change based on the hour of the day.</p>
+        <p>Add your explanation of what the page does, and how it works here.</p>
 
-        <img id="time-pic" src="https://via.placeholder.com/400x200?text=Image+Loading..." alt="Time of Day Image">
+        <img id="time-pic" src="https://dummyimage.com/300x400" alt="Time of Day Image">
     </div>
 
     <script>
@@ -58,7 +59,7 @@
            the background color using document.querySelector('html') 
         */
 
-        // The JS to fix the validator links (keeping the original functionality)
+        // Fixes HTML/CSS Checker links
         document.addEventListener("DOMContentLoaded", function() {
             var currentUrl = window.location.href;
             document.getElementById("html-validate").href = "https://validator.w3.org/nu/?doc=" + encodeURIComponent(currentUrl);
@@ -68,8 +69,8 @@
 
     <footer style="margin-top: 30px;">
         <small>
-            <a id="html-validate" href="">Validate HTML</a> | 
-            <a id="css-validate" href="">Validate CSS</a>
+            <a id="html-validate" href="" target="_blank">Check HTML</a> | 
+            <a id="css-validate" href="" target="_blank">Check CSS</a>
         </small>
     </footer>
 
