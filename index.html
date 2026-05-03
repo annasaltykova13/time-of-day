@@ -48,10 +48,6 @@
         
         <h2 id="time-text">What time is it?</h2>
 
-        <p>This page will change based on the hour of the day.</p>
-        <p>Thise page uses JavaScript 
-        to determine the current hour, and presents a different image, 
-        custom message, and color based on each of the following times of day:</p> 
 
         <div style="width:50%;">
             <ul>
@@ -62,12 +58,13 @@
             </ul>
         </div>
 
+        
+        <img id="time-pic" src="https://dummyimage.com/300x400" alt="Time of Day Image">
         <p> To do this, I am using a compund if block, selecting ranges, 
             and using the getHours() method of the Date() object.</p>
         <p> To make changes, I use <strong>document.getElementById()</strong> and <strong>document.querySelector()</strong>
             to identify items on the page to change.
         </p>
-        <img id="time-pic" src="https://dummyimage.com/300x400" alt="Time of Day Image">
     </div>
 
     <script>
@@ -92,7 +89,7 @@
         let myPic = "";
 
         //TESTING ONLY REMOVE THE LINE
-        myHour = 2;
+        //myHour = 2;
 
         if (myHour >= 5 && myHour < 12){
             mySentence = "Good Morning!";
@@ -130,6 +127,7 @@
             document.getElementById("html-validate").href = "https://validator.w3.org/nu/?doc=" + encodeURIComponent(currentUrl);
             document.getElementById("css-validate").href = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(currentUrl);
         });
+        
     </script>
 
     <footer style="margin-top: 30px;">
