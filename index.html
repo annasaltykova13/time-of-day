@@ -76,21 +76,23 @@
         let myPic = "";
 
         //TESTING ONLY REMOVE THE LINE
-        myHour = 14
+        myHour = 19;
 
         if (myHour >= 5 && myHour < 12){
-            mySentence = "Good Morning";
+            mySentence = "Good Morning!";
             myColor = "orange";
             myPic = "morning.jpg";
         } else if (myHour >= 12 && myHour < 18){
-            mySentence = "Good Afternoon";
+            mySentence = "Good Afternoon!";
             myColor = "yellow";
             myPic = "afternoon.jpg";
-
-
+        } else if (myHour >= 18 && myHour < 23){
+            mySentence = "Good Evening!";
+            myColor = "blue";
+            myPic = "night.jpg";
         }else{
-            mySentence = "it's not after noon";
-            myColor = "red";
+            mySentence = "Good Night!";
+            myColor = "purple";
             myPic = "night.jpg";
         }
 
