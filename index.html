@@ -48,7 +48,7 @@
         
         <h2 id="time-text">What time is it?</h2>
 
-        <h3 id="day-text">What day of week is it?</h3>"
+        <h3 id="day-text">What day of week is it?</h3>
 
 
         <div style="width:50%;">
@@ -89,8 +89,7 @@
         let mySentence = "";
         let myColor = "";
         let myPic = "";
-        let myWeek = new Week();
-        let myDay = myDay.getDay();
+        let myDay = myDate.getDay();
         let myDaySentence = "";
 
         //TESTING ONLY REMOVE THE LINE
@@ -113,20 +112,20 @@
             myColor = "purple";
             myPic = "night.jpg";
         }
-        if(myDay = 0){
+        if(myDay == 0){
             myDaySentence = "It is Sunday!";
-        } else if (myDay = 1){
+        } else if (myDay == 1){
             myDaySentence = "It is Monday!";
-        } else if (myDay = 2){
+        } else if (myDay == 2){
             myDaySentence = "It is Tuesday!";
-        }else if (myDay = 3){
+        }else if (myDay == 3){
             myDaySentence = "It is Wednesday!";
-        }else if (myDay = 4){
+        }else if (myDay == 4){
             myDaySentence = "It is Thursday!";
-        }else if (myDay = 5){
+        }else if (myDay == 5){
             myDaySentence = "It is Friday!";
         }else{
-            myDaySentence= "It is Saturday!";
+            myDaySentence = "It is Saturday!";
         }
 
         // adds sentence to page
