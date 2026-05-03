@@ -87,6 +87,8 @@
         let mySentence = "";
         let myColor = "";
         let myPic = "";
+        let myDay = myDay.getDay();
+        let myDaySentence = "";
 
         //TESTING ONLY REMOVE THE LINE
         //myHour = 2;
@@ -108,9 +110,27 @@
             myColor = "purple";
             myPic = "night.jpg";
         }
+        if(myDay = 0){
+            myDaySentence = "It is Sunday!"
+        } else if (myDay = 1){
+            myDaySentence = "It is Monday!"
+        } else if (myDay = 2){
+            myDaySentence = "It is Tuesday!"
+        }else if (myDay = 3){
+            myDaySentence = "It is Wednesday!"
+        }else if (myDay = 4){
+            myDaySentence = "It is Thursday!"
+        }else if (myDay = 5){
+            myDaySentence = "It is Friday!"
+        }else{
+            myDaySentence= "It is Saturday!"
+        }
 
         // adds sentence to page
         document.getElementById("time-text").innerHTML = mySentence;
+        
+        // adss day of week sentence
+        document.getElementById("day-text").innerHTML = myDaySentence;
 
         // adds color to html
         document.querySelector('html').style.backgroundColor = myColor;
