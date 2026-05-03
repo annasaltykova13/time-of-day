@@ -55,32 +55,54 @@
     </div>
 
     <script>
-        // We will use this section to write our if/else logic
-        // Example: document.querySelector('#time-text').innerHTML = "Good Morning!";
-        
-        /* Below, we would target the 'html' element to change 
-           the background color using document.querySelector('html') 
+        /*
+
+        Deliverable: Create a web page that uses JavaScript 
+        to determine the current hour, and presents a different image, 
+        custom message, and color based on each of the following times of day:
+
+        Morning (5am to 12 noon)
+        Afternoon (12 noon to 6pm)
+        Evening (6pm to 11pm)
+        Night (11pm to 5am)
+
         */
 
 
-        myDate = new Date();
-        myHour = myDate.getHours();
-        mySentence = "";
-        myColor = "";
+        let myDate = new Date();
+        let myHour = myDate.getHours();
+        let mySentence = "";
+        let myColor = "";
+        let myPic = "";
 
-        if (myHour >= 12){
+        //TESTING ONLY REMOVE THE LINE
+        myHour = 7
+
+        if (myHour >= 5 && mtHour < 12){
         //alert("it's after noon");
-            mySentence = "it's after noon";
-            myColor = "blue";
+            mySentence = "Good Morning";
+            myColor = "orange";
+            myPic = "morning.jpg";
         }else{
         //alert("it's not after noon");
             mySentence = "it's not after noon";
             myColor = "red";
+            myPic = "night.jpg";
         }
 
+        // adds sentence to page
         document.getElementById("time-text").innerHTML = mySentence;
-        //document.body.style.backgroundColor = myColor;
+
+        // adds color to html
         document.querySelector('html').style.backgroundColor = myColor;
+
+        myPic = "images/" + myPic;
+
+        console.log(myPic);
+        alert(myPic);
+
+        // change to out pic
+         document.getElementById("time-pic").src = myPic;
 
 
 
